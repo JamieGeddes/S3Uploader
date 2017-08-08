@@ -29,7 +29,9 @@ namespace S3Uploader.Core
                     Console.WriteLine($"Uploading file {filename}");
 
                     var remoteName = filename
-                        .Replace(rootPath, String.Empty)
+                        .Replace(rootPath + "\\", String.Empty);
+
+                    remoteName = remoteName
                         .Replace(@"\", "/");
 
                     var result = await UploadFile(client, filename, remoteName, bucket);
