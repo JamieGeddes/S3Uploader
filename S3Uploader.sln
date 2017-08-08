@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S3Uploader.App", "S3Uploader.App\S3Uploader.App.csproj", "{413406D1-804E-48FF-A32F-6A40D42818CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S3Uploader.Core", "S3Uploader.Core\S3Uploader.Core.csproj", "{415B29EF-5EE9-4ED9-A464-7904271EA7A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{413406D1-804E-48FF-A32F-6A40D42818CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{413406D1-804E-48FF-A32F-6A40D42818CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{413406D1-804E-48FF-A32F-6A40D42818CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{413406D1-804E-48FF-A32F-6A40D42818CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{415B29EF-5EE9-4ED9-A464-7904271EA7A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{415B29EF-5EE9-4ED9-A464-7904271EA7A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{415B29EF-5EE9-4ED9-A464-7904271EA7A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{415B29EF-5EE9-4ED9-A464-7904271EA7A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
