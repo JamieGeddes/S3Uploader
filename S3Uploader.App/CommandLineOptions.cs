@@ -4,12 +4,10 @@ namespace S3Uploader.App
 {
     internal class CommandLineOptions
     {
-        //[Option('p', "path", Required = true)]
-        [Option('p', "path")]
+        [Option('p', "path", Required = true)]
         public string Path { get; set; }
 
-        //[Option('b', "bucket", Required = true)]
-        [Option('b', "bucket")]
+        [Option('b', "bucket", Required = true)]
         public string Bucket { get; set; }
     }
 }

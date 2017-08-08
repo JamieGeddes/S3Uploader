@@ -16,8 +16,10 @@ namespace S3Uploader.Core
 
         private const string DEFAULT_CONTENT_TYPE = "binary/octet-stream";
 
-        public async Task AttemptUpload(string rootPath, string bucket)
+        public async Task<Result> AttemptUpload(string rootPath, string bucket)
         {
+            if (!Directory.Exists(rootPath)) return Result.Fail($"Invalid path: {rootPath}");
+
             var filesToUpload = Directory.GetFiles(rootPath, "*", SearchOption.AllDirectories);
 
             using (var client = new AmazonS3Client(defaultRegion))
@@ -34,6 +36,8 @@ namespace S3Uploader.Core
 
                     if (result.IsFailure) Console.WriteLine(result.Error);
                 }
+
+                return Result.Ok();
             }
         }
 

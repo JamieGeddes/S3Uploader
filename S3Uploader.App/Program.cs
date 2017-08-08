@@ -16,7 +16,9 @@ namespace S3Uploader.App
             {
                 var uploader = new AwsS3Uploader();
 
-                await uploader.AttemptUpload(options.Path, options.Bucket);
+                var result = await uploader.AttemptUpload(options.Path, options.Bucket);
+
+                if (result.IsFailure) Console.WriteLine(result.Error);
             }
             else
             {
